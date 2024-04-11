@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Engineering Club</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
 </head>
 
 <body>
@@ -195,5 +197,25 @@
   </div>
   <br>
   <br> 
+
+<!-- JS for Firebase -->
+	<script type="module">
+  	// setup firebase app and firestore database
+  	import { getFirestore } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
+  	const firebaseConfig = {
+    apiKey: "AIzaSyB8MvIzF_YSMiEedaMEurjjiYAaFGiNEjg",
+    authDomain: "engineering-club-d191d.firebaseapp.com",
+    projectId: "engineering-club-d191d",
+    storageBucket: "engineering-club-d191d.appspot.com",
+    messagingSenderId: "375134642835",
+    appId: "1:375134642835:web:a2b8807b984f6e91fba366"
+    };
+  	const app = firebase.initializeApp(firebaseConfig);
+  	var db = getFirestore(app);
+  	console.log("firebase setup complete!");
+	</script>
+	<script src="script.js"></script>
+
+
 </body>
 </html>
