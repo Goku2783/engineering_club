@@ -150,11 +150,12 @@
   <div>
     <h2>V. Selection of Projects (Students use only) </h2>
 
-    <p>Select 3 of the following projects as the ones you prefer to do during our Engineering club.</p> 
+    <p>Enter your name and select 3 of the following projects as the ones you prefer to do during our Engineering club.</p> 
     <!-- Form with label elements for selecting projects -->
     <form id="order1" action="order.php" method="post">
     <fieldset>
       <legend>2nd/3rd Grade Projects</legend>
+      Name: <input type="text" name="name" id="name" required="required" placeholder="Enter your name"><br>
       <input type="radio" name="parachute" id="crust1" value="thin">
       <label for="crust1">Parachute Egg Challenge</label><br>
       <input type="radio" name="dams" id="crust2" value="deep">
@@ -163,6 +164,7 @@
       <label for="crust3">Spider Web</label><br>
       <input type="radio" name="spider web" id="crust4" value="deep">
       <label for="crust4">Erosion Barrier</label><br>
+      <input type="submit" name="submit" value="Submit">
     </fieldset>
     </form>
     
@@ -175,6 +177,7 @@
     <form id="order2" action="order.php" method="post">
     <fieldset>
       <legend>4th/5th Grade Projects</legend>
+      Name: <input type="text" name="name" id="name" required="required" placeholder="Enter your name"><br>
       <input type="radio" name="parachute" id="crust5" value="thin">
       <label for="crust5">Parachute Egg Challenge</label><br>
       <input type="radio" name="magnetic swing" id="crust6" value="deep">
@@ -183,7 +186,8 @@
       <label for="crust7">Water Filter</label><br>
       <input type="radio" name="stomp rocket" id="crust8" value="deep">
       <label for="crust8">Stomp Rocket</label><br>
-      </fieldset>
+      <input type="submit" name="submit" value="Submit">
+    </fieldset>
       </form>
     
     Comments: 4th/5th grade<br>
