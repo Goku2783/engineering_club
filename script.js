@@ -14,22 +14,29 @@ function toggleDiagram() {
 function selectedProjects1() {
   var projects_group1 = [];
   var club_one = document.forms("order1").value
-  project_group1.push(club_one);
+  projects_group1.push(club_one);
+  console.log(projects_group1);
+  return projects_group1;
 }
 
 function selecedProjects2() {
   var projects_group2 = [];
   var club_two = document.forms("order2").value
-  project_group2.push(club_two);
+  projects_group2.push(club_two);
+  return projects_group2;
 }
-// save data in JSON format.
-var group1JSON = JSON.stringify(project_group1);
-console.log(group1JSON)
-return group1JSON;
 
-var group2JSON = JSON.stringify(project_group2);
+var proj_group1 = projects_group1;
+var proj_group2 = projects_group2;
+
+// save data in JSON format.
+var group1JSON = JSON.stringify(proj_group1);
+console.log(group1JSON)
+//return group1JSON;
+
+var group2JSON = JSON.stringify(proj_group2);
 console.log(group2JSON)
-return group2JSON;
+//return group2JSON;
 
 
 
