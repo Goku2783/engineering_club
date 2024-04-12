@@ -152,48 +152,44 @@
   <div>
     <h2>V. Selection of Projects (Students use only) </h2>
 
-    <p>Enter your name and select 3 of the following projects as the ones you prefer to do during our Engineering club.</p> 
+    <p>Enter your name and write YES next to the project you wish to do and NO next to the one you do not want to do.</p> 
     <!-- Form with label elements for selecting projects -->
-    <form id="order1" action="order.php" method="post">
+    <form id="form1" action="order.php" method="post">
     <fieldset>
       <legend>2nd/3rd Grade Projects</legend>
       Name: <input type="text" name="name" id="name1" required="required" placeholder="Enter your name"><br>
-      <input type="radio" name="parachute" id="crust1" value="thin">
-      <label for="crust1">Parachute Egg Challenge</label><br>
-      <input type="radio" name="dams" id="crust2" value="deep">
-      <label for="crust2">Dams</label><br>
-      <input type="radio" name="spider web" id="crust3" value="deep">
-      <label for="crust3">Spider Web</label><br>
-      <input type="radio" name="spider web" id="crust4" value="deep">
-      <label for="crust4">Erosion Barrier</label><br>
-      <input type="submit" name="submit" value="Submit">
+      Parachute Egg Challenge: <input type="text" name="Parachute" id="Parachute" required="required" placeholder="Write Yes or No"><br>
+      Dam: <input type="text" name="Dam" id="Dam" required="required" placeholder="Write Yes or No"><br>
+      Spider Web: <input type="text" name="Spider Web" id="Spider Web" required="required" placeholder="Write Yes or No"><br>
+      Erosion Barrier: <input type="text" name="Errosion Barrier" id="Erosion Barrier" required="required" placeholder="Write Yes or No"><br><br>
+      Comments: 2nd/3rd grade<br>
+      <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
+      <button type="button" onclick="pagePrint1(form1)">Submit</button>  
+      <br>
     </fieldset>
     </form>
-    
-    Comments: 2nd/3rd grade<br>
-    <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
       <br>
       <br>
       <br>
     <!-- Form with label elements for selecting projects -->
-    <form id="order2" action="order.php" method="post">
+    <form id="form2" action="order.php" method="post">
     <fieldset>
       <legend>4th/5th Grade Projects</legend>
       Name: <input type="text" name="name" id="name2" required="required" placeholder="Enter your name"><br>
-      <input type="radio" name="parachute" id="crust5" value="thin">
-      <label for="crust5">Parachute Egg Challenge</label><br>
-      <input type="radio" name="magnetic swing" id="crust6" value="deep">
-      <label for="crust6">Magnetic Swing</label><br>
-      <input type="radio" name="water filter" id="crust7" value="deep">
-      <label for="crust7">Water Filter</label><br>
-      <input type="radio" name="stomp rocket" id="crust8" value="deep">
-      <label for="crust8">Stomp Rocket</label><br>
-      <input type="submit" name="submit" value="Submit">
-    </fieldset>
-      </form>
+      Parachute Egg Challenge: <input type="text" name="Parachute" id="Parachute" required="required" placeholder="Write Yes or No"><br>
+      Magnetic Swing: <input type="text" name="Magnetic Swin" id="Magentic Swing" required="required" placeholder="Write Yes or No"><br>
+      Water Filter: <input type="text" name="Water Filter" id="Water Filter" required="required" placeholder="Write Yes or No"><br>
+      Stomp Rocket: <input type="text" name="Stomp Rocket" id="Stomp Rocket" required="required" placeholder="Write Yes or No"><br>
+      <br>
+      Comments: 4th/5th grade<br>
+      <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
+      <button type="button" onclick="pagePrint2(form2)">Submit</button>
+      <br>
     
-    Comments: 4th/5th grade<br>
-    <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
+    </fieldset>  
+    </form>
+    
+    
   </div>
   <br>
   <br> 

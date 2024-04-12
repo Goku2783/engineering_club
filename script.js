@@ -10,38 +10,19 @@ function toggleTable2() {
 function toggleDiagram() {
   document.getElementById("Diagram").classList.toggle("hidden");
 }
-
-function selectedProjects1() {
-  var projects_group1 = [];
-  var club_one = document.forms("order1").value
-  projects_group1.push(club_one);
-  console.log(projects_group1);
-  return projects_group1;
+//prints data from the form into the console by saving it in an array.
+function pagePrint1(form1){
+  var printdata = document.getElementById("form1").elements;
+  var group1 = [];
+  for (var i = 0; i < printdata.length; i++)
+    group1=group1+printdata[i].value+"\n"
+  console.log(group1);
 }
-
-function selecedProjects2() {
-  var projects_group2 = [];
-  var club_two = document.forms("order2").value
-  projects_group2.push(club_two);
-  return projects_group2;
+//prints data from the form into the console by saving it in an array.
+function pagePrint2(form2){
+  var printdata = document.getElementById("form2").elements;
+  var group1 = [];
+  for (var i = 0; i < printdata.length; i++)
+    group1=group1+printdata[i].value+"\n"
+  console.log(group1);
 }
-
-var proj_group1 = projects_group1;
-var proj_group2 = projects_group2;
-
-// save data in JSON format.
-var group1JSON = JSON.stringify(proj_group1);
-console.log(group1JSON)
-//return group1JSON;
-
-var group2JSON = JSON.stringify(proj_group2);
-console.log(group2JSON)
-//return group2JSON;
-
-
-
-//function getID() {
-//   var studentID = [];
-//   var tstStudentIdVal = document.forms["getFormInfo"]["txtStudentID"].value
-//   studentID.push(tstStudentIdVal);
-//   var numberOnly = /^[0-9]+$/;
