@@ -157,15 +157,21 @@
     <form id="form1" action="order.php" method="post">
     <fieldset>
       <legend>2nd/3rd Grade Projects</legend>
-      Name: <input type="text" name="name" id="name1" required="required" placeholder="Enter your name"><br>
-      Parachute Egg Challenge: <input type="text" name="Parachute" id="Parachute" required="required" placeholder="Write Yes or No"><br>
-      Dam: <input type="text" name="Dam" id="Dam" required="required" placeholder="Write Yes or No"><br>
-      Spider Web: <input type="text" name="Spider Web" id="Spider Web" required="required" placeholder="Write Yes or No"><br>
-      Erosion Barrier: <input type="text" name="Errosion Barrier" id="Erosion Barrier" required="required" placeholder="Write Yes or No"><br><br>
+      <lable for="Name">Name:</lable>
+      <input type="text" name="name" id="name1" required placeholder="Enter your name"><br>
+      <lable for="Name">Parachute Egg Challenge:</lable>
+      <input type="text" name="Parachute" required placeholder="Write Yes or No"><br>
+      <lable for="Name">Dam:</lable> 
+      <input type="text" name="Dam" required placeholder="Write Yes or No"><br>
+      <lable for="Name">Spider Web:</lable> 
+      <input type="text" name="Spider Web" required placeholder="Write Yes or No"><br>
+      <lable for="Name">Erosion Barrier:</lable> 
+      <input type="text" name="Errosion Barrier" required placeholder="Write Yes or No"><br><br>
       Comments: 2nd/3rd grade<br>
       <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
-      <button type="button" onclick="pagePrint1(form1)">Submit</button>  
       <br>
+      <button type="button" onclick="pagePrint1(form1)">Submit</button>
+      <input type="reset" name="reset" value="Reset">
     </fieldset>
     </form>
       <br>
@@ -175,25 +181,27 @@
     <form id="form2" action="order.php" method="post">
     <fieldset>
       <legend>4th/5th Grade Projects</legend>
-      Name: <input type="text" name="name" id="name2" required="required" placeholder="Enter your name"><br>
-      Parachute Egg Challenge: <input type="text" name="Parachute" id="Parachute" required="required" placeholder="Write Yes or No"><br>
-      Magnetic Swing: <input type="text" name="Magnetic Swin" id="Magentic Swing" required="required" placeholder="Write Yes or No"><br>
-      Water Filter: <input type="text" name="Water Filter" id="Water Filter" required="required" placeholder="Write Yes or No"><br>
-      Stomp Rocket: <input type="text" name="Stomp Rocket" id="Stomp Rocket" required="required" placeholder="Write Yes or No"><br>
-      <br>
+      <lable for="Name">Name:</lable> 
+      <input type="text" name="name" placeholder="Enter your name" required><br>
+      <lable for="Name">Parachute Egg Challenge:</lable> 
+      <input type="text" name="Parachute" placeholder="Write Yes or No" required><br>
+      <lable for="Name">Magnetic Swing:</lable>
+      <input type="text" name="Magnetic Swin" placeholder="Write Yes or No" required><br>
+      <lable for="Name">Water Filter:</lable>
+      <input type="text" name="Water Filter" placeholder="Write Yes or No" required><br>
+      <lable for="Name">Stomp Rocket:</lable>
+      <input type="text" name="Stomp Rocket" placeholder="Write Yes or No" required>
+      <br><br>
       Comments: 4th/5th grade<br>
       <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
-      <button type="button" onclick="pagePrint2(form2)">Submit</button>
       <br>
-    
+      <button type="button" onclick="pagePrint2(form2)">Submit</button>
+      <input type="reset" name="reset" value="Reset">
     </fieldset>  
     </form>
-    
-    
   </div>
   <br>
   <br> 
-
 <!-- JS for Firebase -->
 	<script type="module">
   	// setup firebase app and firestore database
@@ -211,7 +219,6 @@
   	console.log("firebase setup complete!");
 	</script>
 	<script src="script.js"></script>
-
 
 </body>
 </html>
