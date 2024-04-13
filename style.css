@@ -58,13 +58,16 @@ height: 15%;}
 
 iframe {margin-left: 30px;}
 textarea {height: 5em;
-          width: 30em; 
+          width: 40em; 
           font-family: Arial; 
           padding-left: 8px; 
-          padding-top: 8px;}
+          padding-top: 8px; font-size: 20px;}
+input {font-size: 20px;}
 fieldset{background-color: #ddf8f4;}
 
-#form1 {float: right; margin-right: 20%;}
-#form2 {padding-right: 65%; margin-left: 5%;}
+#form1 {padding-right: 50%; padding-left: 5%;}
+#form2 {padding-right: 50%; padding-left: 5%;}
+
+button {background-color: #64e864; font-size: 20px;}
 
 
