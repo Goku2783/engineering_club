@@ -43,7 +43,7 @@ th {border: 2px solid black;
     background-color: #f09a05;
     padding: 10px 20px 10px;}
 
-td {border: 2px solid black;;
+td {border: 2px solid black;
     padding: 10px 20px 10px;
     background-color: white;
     color: black; font-size: 15px;}
@@ -53,8 +53,7 @@ margin-right: auto; width: 50%;
 height: 150%;}
 
 #center2 {display: block; margin-left: auto; 
-margin-right: auto; width: 15%; 
-height: 15%;}
+margin-right: auto; width: 15%; height: 15%;}
 
 iframe {margin-left: 10px;border-width: 15px; border-color: #5d5df8;}
 textarea {height: 5em;
