@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Engineering Club</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+  <h1>Engineering Club</h1>
+
+  <!-- My Navigation-->
+  <ul>
+    <lo><a href="index.html">Home</a></lo>
+    <lo><a class="active" href="form1.html">2nd/3rd Grade Projects</a></lo>
+    <lo><a href="form2.html">4th/5th Grade Projects</a></lo>
+    <lo><a href="videos.html">Videos</a></lo>
+  </ul>
+  <h2>IV. Selection of Projects (Students use only) </h2>
+
+  <p>Enter your name and write YES next to the project you wish to do and NO next to the one you do not wish to do.</p> 
+  
+  <!-- Form with label elements for selecting projects -->
+  <form id="form1" action="order.php" method="post">
+  <fieldset>
+    <legend>2nd/3rd Grade Projects</legend>
+    <br>
+    Name: <input type="text" name="name" id="name1" placeholder="Enter your name" required><br><br>
+    Parachute Egg Challenge: <input type="text" name="Parachute" placeholder="Write Yes or No" required><br><br>
+   Dam: <input type="text" name="Dam" placeholder="Write Yes or No" required><br><br>
+    Spider Web: <input type="text" name="Spider Web" placeholder="Write Yes or No" required><br><br>
+    Erosion Barrier: <input type="text" name="Errosion Barrier" placeholder="Write Yes or No" required><br><br>
+    Comments: 2nd/3rd grade<br>
+    <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
+    <br>
+    <button type="button" onclick="pagePrint1(form1)">Submit</button>
+    <input class="reset" type="reset" name="reset" value="Reset">
+  </fieldset>
+  </form>
+    <br>
+    <br>
+
+
+  
+</body>
+</html>

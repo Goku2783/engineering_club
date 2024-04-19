@@ -11,14 +11,23 @@
 </head>
 
 <body>
-  <h1>Engineering Club</h1>
-  <h2>Challenging our future Engineers & Computer Scientists @ John S Clark Elementary</h2>
+  <h1>Welcome to Engineering Club</h1>
+  
+  <!-- My Navigation-->
+  <ul>
+    <lo><a class="active" href="index.html">Home</a></lo>
+    <lo><a href="form1.html">2nd/3rd Grade Projects</a></lo>
+    <lo><a href="form2.html">4th/5th Grade Projects</a></lo>
+    <lo><a href="videos.html">Videos</a></lo>
+  </ul>
+  
+  <h2>Where we challenge our future Engineers & Computer Scientists @ John S Clark Elementary</h2>
   <h3>Teacher: Mr. Rivera</h3>
   <img id="center2" src="ClarkLogo70.png" alt="John S Clark Elementary">
   <script src="script.js"></script>
   <br>
   <br>
-
+  
 <!-- meeting date tables for each school semester. -->  
   <h2>I. Meeting Dates</h2>
     <button onClick="toggleTable1()">Open First Semester</button>
@@ -108,7 +117,7 @@
 
   <!-- List of steps for the EPD. -->
   <div>
-    <h2>II. Steps of the Engineering Design Process (EDP)</h2>
+    <h2>II. Steps of the  Engineering Design Process (EDP)</h2>
     <ol>
       <li>Ask - Define the problem?</li>
       <li>Imagine - Think of solutions.</li>
@@ -117,9 +126,9 @@
       <li>Improve - How can you modify your design to make it better?</li>
     </ol>
 
-    <button onClick="toggleDiagram()">Open Diagram</button>
+    <button onClick="toggleDiagram()"><a>Open Diagram</a></button>
     <a id="Diagram" class="hidden">
-      <img src="EDPdiagram.jpeg" id="center1" alt="Engineering Design Process">
+      <img src="EDPdiagram.jpeg" id="center1" class="active" alt="Engineering Design Process">
     </a>
   </div>
 <!-- List of websites used in class. -->
@@ -133,65 +142,7 @@
     </ol>
     <br>
   </div>
-
-<!-- Embeded YouTube videos. --> 
-  <h2>IV. EDP: Song and Educational Videos</h2>
-  <br>
-  <iframe width="420" height="315"
-  src="https://www.youtube.com/embed/nMwG1wnESDA">
-  </iframe>
-  <iframe width="420" height="315"
-  src="https://www.youtube.com/embed/6dR3iKaWUoU">
-  </iframe>
-  <iframe width="420" height="315"
-  src="https://www.youtube.com/embed/MFGg1calQ6k">
-  </iframe>
-  <br>
-  <br>
-  
-  <div>
-    <h2>V. Selection of Projects (Students use only) </h2>
-
-    <p>Enter your name and write YES next to the project you wish to do and NO next to the one you do not wish to do.</p> 
-    <!-- Form with label elements for selecting projects -->
-    <form id="form1" action="order.php" method="post">
-    <fieldset>
-      <legend>2nd/3rd Grade Projects</legend>
-      <br>
-      Name: <input type="text" name="name" id="name1" placeholder="Enter your name" required><br><br>
-      Parachute Egg Challenge: <input type="text" name="Parachute" placeholder="Write Yes or No" required><br><br>
-     Dam: <input type="text" name="Dam" placeholder="Write Yes or No" required><br><br>
-      Spider Web: <input type="text" name="Spider Web" placeholder="Write Yes or No" required><br><br>
-      Erosion Barrier: <input type="text" name="Errosion Barrier" placeholder="Write Yes or No" required><br><br>
-      Comments: 2nd/3rd grade<br>
-      <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
-      <br>
-      <button type="button" onclick="pagePrint1(form1)">Submit</button>
-      <input class="reset" type="reset" name="reset" value="Reset">
-    </fieldset>
-    </form>
-      <br>
-      <br>
-    <!-- Form with label elements for selecting projects -->
-    <form id="form2" action="order.php" method="post">
-    <fieldset>
-      <legend>4th/5th Grade Projects</legend>
-      <br>
-      Name: <input type="text" name="name" placeholder="Enter your name" required><br><br>
-      Parachute Egg Challenge: <input type="text" name="Parachute" placeholder="Write Yes or No" required><br><br>
-      Magnetic Swing: <input type="text" name="Magnetic Swin" placeholder="Write Yes or No" required><br><br>
-      Water Filter: <input type="text" name="Water Filter" placeholder="Write Yes or No" required><br><br>
-      Stomp Rocket: <input type="text" name="Stomp Rocket" placeholder="Write Yes or No" required><br><br>
-      
-      Comments: 4th/5th grade<br>
-      <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
-      <br>
-      <button type="button" onclick="pagePrint2(form2)">Submit</button>
-      <input class="reset" type="reset" name="reset" value="Reset">
-    </fieldset>  
-    </form>
-  <br>
-  <br> 
+   
 <!-- JS for Firebase -->
 	<script type="module">
   	// setup firebase app and firestore database

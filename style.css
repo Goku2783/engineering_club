@@ -20,7 +20,7 @@ h1 {text-align: center;
     background-color: blue; 
     padding-bottom: 10px;}
 
-h2 {font-size: 35px;
+h2 {font-size: 25px;
     font-family: serif;
     background-color: #bcb8b8; 
     padding-left: 10px; 
@@ -68,9 +68,38 @@ fieldset{background-color: #ddf8f4;}
 #form1 {padding-right: 50%; padding-left: 5%;}
 #form2 {padding-right: 50%; padding-left: 5%;}
 
-button {background-color: #64e864; font-size: 20px;}
-.reset {background-color: #f47b7b;}
+button {background-color: #a6f7a7; font-size: 20px;}
+
+.reset {background-color: #f7a6a6;}
 
 input:required {border: 4px solid green;}
 
 legend {font-size: 35px; color: blue;}
+
+
+ul {
+  list-style-type: none;
+  margin: 30px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: white; 
+  border: solid black;;}
+
+lo {float: left; padding-left: 50px;}
+
+lo a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 55px 5px;
+  text-decoration: none; 
+  border: 5px solid #434242;
+  background-color: #ededed;
+}
+
+lo a:hover {background-color: #f4fb8e;}
+
+.active {background-color: #55ecb5;}
+
+li a:hover {background-color: #f4fb8e;}
+
