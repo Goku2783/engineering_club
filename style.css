@@ -16,8 +16,8 @@ body {font-size: 25px;
 h1 {text-align: center;
     font-size: 80px;
     font-family: serif;
-    color: white;
-    background-color: blue; 
+    color: gold;
+    background-color: purple; 
     padding-bottom: 10px;}
 
 h2 {font-size: 25px;
@@ -79,27 +79,25 @@ legend {font-size: 35px; color: blue;}
 
 ul {
   list-style-type: none;
-  margin: 30px;
   padding: 10px;
   overflow: hidden;
-  background-color: white; 
-  border: solid black;;}
+  background-color: gold; 
+  border: solid purple;}
 
-lo {float: left; padding-left: 50px;}
+lo {float: left; padding-left: 90px;}
 
 lo a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 5px 55px 5px;
+  padding: 5px 40px 5px;
   text-decoration: none; 
-  border: 5px solid #434242;
-  background-color: #ededed;
+  background-color: purple;
 }
 
-lo a:hover {background-color: #f4fb8e;}
+lo a:hover {background-color: #f59f0a;}
 
-.active {background-color: #55ecb5;}
+.active {background-color: #03a56a;}
 
 li a:hover {background-color: #f4fb8e;}
 
