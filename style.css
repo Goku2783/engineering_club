@@ -67,7 +67,7 @@ fieldset{background-color: #ddf8f4;}
 #form1 {padding-right: 50%; padding-left: 5%;}
 #form2 {padding-right: 50%; padding-left: 5%;}
 
-button {background-color: #a6f7a7; font-size: 20px;}
+button {background-color: #a6f7a7; font-size: 20px; border-radius: 20px;}
 
 .reset {background-color: #f7a6a6;}
 
@@ -81,7 +81,8 @@ ul {
   padding: 10px;
   overflow: hidden;
   background-color: gold; 
-  border: solid purple;}
+  border-bottom: 5px solid purple; 
+  border-top: 5px solid purple;}
 
 lo {float: left; padding-left: 90px;}
 
@@ -89,10 +90,10 @@ lo a {
   display: block;
   color: white;
   text-align: center;
-  padding: 5px 40px 5px;
+  padding: 5px 63px 5px;
   text-decoration: none; 
   background-color: purple;
-}
+  border-radius: 20px;}
 
 lo a:hover {background-color: #f59f0a;}
 
