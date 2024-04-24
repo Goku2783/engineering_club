@@ -9,6 +9,8 @@ html {
 
 body {font-size: 25px;
       background-image: url(3274387.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       padding-left: 10px;
       padding-bottom: 20px; 
       padding-right: 10px;}
