@@ -1,3 +1,16 @@
+// setup firebase app and firestore database
+const firebaseConfig = {
+  apiKey: "AIzaSyB8MvIzF_YSMiEedaMEurjjiYAaFGiNEjg",
+  authDomain: "engineering-club-d191d.firebaseapp.com",
+  projectId: "engineering-club-d191d",
+  storageBucket: "engineering-club-d191d.appspot.com",
+  messagingSenderId: "375134642835",
+  appId: "1:375134642835:web:a2b8807b984f6e91fba366"};
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+console.log("firebase setup complete!");
+
+
 //opens first semester meeting dates table on click of button.
 function toggleTable1() {
   document.getElementById("myTable1").classList.toggle("hidden");
