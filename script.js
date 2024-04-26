@@ -89,7 +89,7 @@ function saveForm2() {
 
 
 
-/* //this method retrieves the madlib from the database
+//this method retrieves the madlib from the database
 function retrieveMadLib() {
   console.log("retrieveMadLib() called");
   var storyName = prompt("Enter the name of the story you want to look up:");
