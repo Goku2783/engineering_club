@@ -26,19 +26,20 @@ function toggleDiagram() {
 function submit1() {
   var name1 = document.getElementById("name1").value;
   var parachute1 = document.getElementById("parachute1").value;
-  var magnetic_swing = document.getElementById("magnetic_swing").value;
-  var water_filter = document.getElementById("water_filter").value;
-  var stomp_rocket = document.getElementById("stomp_rocket").value;
+  var Dam = document.getElementById("Dam").value;
+  var spider_web = document.getElementById("spider_web").value;
+  var errosion_barrier = document.getElementById("errosion_barrier").value;
   var comments1 = document.getElementById("comments1").value;
   
   var formData = {
     timestamp: Date.now(),
     name: name1,
     parachute: parachute1,
-    magnetic_swing: magnetic_swing,
-    water_filter: water_filter,
-    stomp_rocket: stomp_rocket,
-    comments: comments1,};
+    Dam: Dam,
+    spider_web: spider_web,
+    errosion_barrier: errosion_barrier,
+    comments: comments1,
+  };
   var formJSON = JSON.stringify(formData);
   console.log("formJSON: " + formJSON);
   return formData;
@@ -56,9 +57,9 @@ function submit2(){
     timestamp: Date.now(),
     name: name2,
     parachute: parachute2,
-    dam: dam,
-    spider_web: spider_web,
-    errosion_barrier: errosion_barrier,
+    magnetic_swin: magnetic_swin,
+    water_filter: water_filter,
+    stomp_rocket: stomp_rocket,
     comments: comments2,};
   var formJSON = JSON.stringify(formData);
   console.log("formJSON: " + formJSON);
