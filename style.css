@@ -71,7 +71,7 @@ fieldset{background-color: #ddf8f4;}
 
 button {background-color: #a6f7a7; font-size: 20px; border-radius: 20px;}
 
-.reset {background-color: #f7a6a6;}
+.reset {background-color: #f7a6a6; border-radius: 20px;}
 
 input:required {border: 4px solid green;}
 

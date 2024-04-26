@@ -29,17 +29,21 @@
     <fieldset>
       <legend>4th/5th Grade Projects</legend>
       <br>
-      Name: <input type="text" name="name" placeholder="Enter your name" required><br><br>
+      Name: <input type="text" name="name" placeholder="Enter your name" required>--> Enter your first and last name initial: (JesusR)<br><br>
       Parachute Egg Challenge: <input type="text" name="Parachute" placeholder="Write Yes or No" required><br><br>
       Magnetic Swing: <input type="text" name="Magnetic Swin" placeholder="Write Yes or No" required><br><br>
       Water Filter: <input type="text" name="Water Filter" placeholder="Write Yes or No" required><br><br>
       Stomp Rocket: <input type="text" name="Stomp Rocket" placeholder="Write Yes or No" required><br><br>
 
-      Comments: 4th/5th grade<br>
+      Comments:<br>
       <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
       <br>
       <button type="button" onclick="pagePrint2(form2)">Submit</button>
       <input class="reset" type="reset" name="reset" value="Reset">
+      <button id="saveForm1" onclick="saveForm1()">Save</button>
+      <button id="retrieveForm1" onclick="retrieveForm1()">Retrieve input</button>
+      <button id="editForm1" onclick="editForm1()">Edit input</button>
+      <button id="deleteForm1" onclick="deleteForm1()">Delete input</button>
     </fieldset>  
     </form>
   <br>
