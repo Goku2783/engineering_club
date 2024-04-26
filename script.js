@@ -12,7 +12,6 @@ const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 console.log("firebase setup complete!");
 
-
 //opens first semester meeting dates table on click of button.
 function toggleTable1() {
   document.getElementById("myTable1").classList.toggle("hidden");
@@ -47,6 +46,7 @@ function submit1(){
     comments: comments1,};
   var storyJSON = JSON.stringify(storyData);
   console.log("storyJSON: " + storyJSON);
+  return storyData;
 }
 
 function submit2(){
