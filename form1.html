@@ -32,14 +32,14 @@
     <legend>2nd/3rd Grade Projects</legend>
     <br>
     Name: <input type="text" name="name" id="name1" placeholder="Enter your name" required>--> Enter your first and last name initial: (JesusR)<br><br>
-    Parachute Egg Challenge: <input type="text" name="Parachute" placeholder="Write Yes or No" required><br><br>
-   Dam: <input type="text" name="Dam" placeholder="Write Yes or No" required><br><br>
-    Spider Web: <input type="text" name="Spider Web" placeholder="Write Yes or No" required><br><br>
-    Erosion Barrier: <input type="text" name="Errosion Barrier" placeholder="Write Yes or No" required><br><br>
+    Parachute Egg Challenge: <input type="text" name="parachute1" id="Parachute" placeholder="Write Yes or No" required><br><br>
+   Dam: <input type="text" name="Dam" id="Dam" placeholder="Write Yes or No" required><br><br>
+    Spider Web: <input type="text" name="Spider Web" id="spider_web" placeholder="Write Yes or No" required><br><br>
+    Erosion Barrier: <input type="text" name="Errosion Barrier" id="errosion_barrier" placeholder="Write Yes or No" required><br><br>
     Comments:<br>
-    <textarea name="comments" placeholder="Enter any suggested projects here."></textarea>
+    <textarea name="comments" id="comments1" placeholder="Enter any suggested projects here."></textarea>
     <br>
-    <button type="button" onclick="pagePrint1(form1)">Submit</button>
+    <button type="button" onclick="submit1()">Submit</button>
     <input class="reset" type="reset" name="reset" value="Reset">
     <button id="saveForm1" onclick="saveForm1()">Save</button>
     <button id="retrieveForm1" onclick="retrieveForm1()">Retrieve input</button>

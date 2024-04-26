@@ -23,22 +23,53 @@ function toggleTable2() {
 function toggleDiagram() {
   document.getElementById("Diagram").classList.toggle("hidden");
 }
-//prints data from the form into the console by saving it in an array.
-i=0
-function pagePrint1(form1){
-  var printdata = document.getElementById("form1").elements;
-  var group1 = [];
-  for (var i = 0; i < printdata.length; i++)
-    group1=group1+printdata[i].value+"\n"
-  console.log(group1);
+
+function submit1(){
+  //form1 submitted items
+  var name1 = document.getElementById("name1").value;
+  var parachute1 = document.getElementById("parachute1").value;
+  var magnetic_swing = document.getElementById("magnetic_swing").value;
+  var water_filter = document.getElementById("water_filter").value;
+  var stomp_rocket = document.getElementById("stomp_rocket").value;
+  var comments1 = document.getElementById("comments1").value;
+
+  var form1 = document.getElementById("form1").innerHTML;
+  console.log("form1: " + form1);  
+  var form1Data = {
+    timestamp: Date.now(),
+    name: name1,
+    parachute: parachute1,
+    magnetic_swing: magnetic_swing,
+    water_filter: water_filter,
+    stomp_rocket: stomp_rocket,
+    comments: comments1,};
+  var form1JSON = JSON.stringify(form1Data);
+  console.log("storyJSON: " + form1JSON);
+  return form1Data;
 }
-//prints data from the form into the console by saving it in an array.
-function pagePrint2(form2){
-  var printdata = document.getElementById("form2").elements;
-  var group2 = [];
-  for (var i = 0; i < printdata.length; i++)
-    group1=group2+printdata[i].value+"\n"
-  console.log(group2);
+
+function submit2(){
+  //form2 submitted items
+  var name2 = document.getElementById("name2").value;
+  var parachute2 = document.getElementById("parachute2").value;
+  var dam = document.getElementById("Dam").value;
+  var spider_web = document.getElementById("spider_web").value;
+  var errosion_barrier = document.getElementById("errosion_barrier").value;
+  var comments2 = document.getElementById("comments2").value;
+
+  var form2 = document.getElementById("form2").innerHTML;
+  console.log("form2: " + form2);  
+  var form2Data = {
+    timestamp: Date.now(),
+    name: name2,
+    parachute: parachute2,
+    dam: dam,
+    spider_web: spider_web,
+    errosion_barrier: errosion_barrier,
+    comments: comments2,};
+  var form2JSON = JSON.stringify(form2Data);
+  console.log("storyJSON: " + form2JSON);
+  return form2Data;
 }
 
 //this method saves form1 to the database
@@ -56,8 +87,9 @@ function saveForm2() {
   alert(form2Data.name + "save to database!");
 }
 
-/*
-//this method retrieves the madlib from the database
+
+
+/* //this method retrieves the madlib from the database
 function retrieveMadLib() {
   console.log("retrieveMadLib() called");
   var storyName = prompt("Enter the name of the story you want to look up:");
