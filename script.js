@@ -35,7 +35,7 @@ function submit1(){
 
   var form1 = document.getElementById("form1").innerHTML;
   console.log("form1: " + form1);  
-  var form1Data = {
+  var storyData = {
     timestamp: Date.now(),
     name: name1,
     parachute: parachute1,
@@ -43,9 +43,9 @@ function submit1(){
     water_filter: water_filter,
     stomp_rocket: stomp_rocket,
     comments: comments1,};
-  var form1JSON = JSON.stringify(form1Data);
-  console.log("storyJSON: " + form1JSON);
-  return form1Data;
+  var storyJSON = JSON.stringify(storyData);
+  console.log("storyJSON: " + storyJSON);
+  return storyData;
 }
 
 function submit2(){
@@ -67,9 +67,9 @@ function submit2(){
     spider_web: spider_web,
     errosion_barrier: errosion_barrier,
     comments: comments2,};
-  var form2JSON = JSON.stringify(form2Data);
-  console.log("storyJSON: " + form2JSON);
-  return form2Data;
+  var storyJSON = JSON.stringify(storyData);
+  console.log("storyJSON: " + storyJSON);
+  return storyData;
 }
 
 //this method saves form1 to the database
