@@ -1,4 +1,3 @@
-
 // setup firebase app and firestore database
 const firebaseConfig = {
     apiKey: "AIzaSyB8MvIzF_YSMiEedaMEurjjiYAaFGiNEjg",
