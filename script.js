@@ -39,8 +39,7 @@ function submit1() {
     Dam: Dam,
     spider_web: spider_web,
     errosion_barrier: errosion_barrier,
-    comments: comments1,
-  };
+    comments: comments1,};
   var form1JSON = JSON.stringify(form1Data);
   console.log("formJSON: " + form1JSON);
   return form1Data;
@@ -73,6 +72,7 @@ function saveForm1() {
   var form1Data = submit1();
   db.collection("2nd/3rd Grade").doc(form1Data.name1).set(form1Data);
   alert(form1Data.name1 + "save to database!");}
+
 //this method saves form2 to the database
 function saveForm2() {
   console.log("saveForm2() called");
