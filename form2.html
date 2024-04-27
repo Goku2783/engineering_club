@@ -27,34 +27,31 @@
   <p>Enter your name and write YES next to the project you wish to do and NO next to the one you do not wish to do.</p> 
   
   <!-- Form with label elements for selecting projects -->
-    <form id="form2" action="order.php" method="post">
-    <fieldset>
-      <legend>4th/5th Grade Projects</legend>
+  <form id="form2" action="order.php" method="post">
+    <legend>4th/5th Grade Projects</legend>
       <br>
-      <label for="Name">Name: </label>
-      <input type="text" name="name2" id="name2"><br><br>
-      <label for="parachute2">Parachute Egg Challenge: </label>
-      <input type="text" name="parachute2" id="parachute2"><br><br>
-      <lable for="magnetic_swing">Magnetic Swing: </lable>
-      <input type="text" name="magnetic_swing" id="magnetic_swing"><br><br>
-      <label for="water_filter">Water Filter: </label>
-      <input type="text" name="water_filter" id="water_filter"><br><br>
-      <label for="rocket">Stomp Rocket: </label>
-      <input type="text" name="rocket" id="rocket"><br><br>
-      <label for="formName">Name your form: </label>
-      <input type="text" name="formName" id="formName"> <--use this format: (formByJuanG)<br><br>
-      <lable for="Comments">Comments: </lable><br>
-      <textarea name="comments2" id="comments2" placeholder="Enter any suggested projects here."></textarea><br>
-      <input class="reset" type="reset" name="reset" value="Reset">
-
-    </fieldset>  
-    </form>
+    <label for="Name">Name: </label>
+    <input type="text" name="name2" id="name2"><br><br>
+    <label for="parachute2">Parachute Egg Challenge: </label>
+    <input type="text" name="parachute2" id="parachute2"><br><br>
+    <lable for="magnetic_swing">Magnetic Swing: </lable>
+    <input type="text" name="magnetic_swing" id="magnetic_swing"><br><br>
+    <label for="water_filter">Water Filter: </label>
+    <input type="text" name="water_filter" id="water_filter"><br><br>
+    <label for="rocket">Stomp Rocket: </label>
+    <input type="text" name="rocket" id="rocket"><br><br>
+    <label for="formName">Name your form: </label>
+    <input type="text" name="formName" id="formName"> <--use this format: (formByJuanG)<br><br>
+    <lable for="Comments">Comments: </lable><br>
+    <textarea name="comments2" id="comments2" placeholder="Enter any suggested projects here."></textarea><br>
+    <input class="reset" type="reset" name="reset" value="Reset">    
+  </form>
  
   <button onclick="Submit2()">Submit</button>
   <button onclick="saveForm2()">Save</button>
-  <button id="retrieve" onclick="retrieveForm2()">Retrieve input</button>
-  <button id="edit" onclick="editForm2()">Edit input</button>
-  <button id="delete" onclick="deleteForm2()">Delete input</button>
+  <button onclick="retrieveForm2()">Retrieve input</button>
+  <button onclick="editForm2()">Edit input</button>
+  <button onclick="deleteForm2()">Delete input</button>
   <br>
   <br> 
   <!-- JS files -->

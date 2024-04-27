@@ -28,7 +28,6 @@
   
   <!-- Form with label elements for selecting projects -->
   <form id="form1" action="order.php" method="post">
-  <fieldset>
     <legend>2nd/3rd Grade Projects</legend>
     <br>
     <label for="Name">Name: </label> 
@@ -46,15 +45,13 @@
     <label for="Comments">Comments: </label><br>
     <textarea name="comments1" id="comments1" placeholder="Enter any suggested projects here."></textarea><br>
     <input class="reset" type="reset" name="reset" value="Reset">
-      
-  </fieldset>
   </form>
   
   <button onclick="Submit1()">Submit</button>
   <button onclick="saveForm1()">Save</button>
-  <button id="retrieve" onclick="retrieveForm1()">Retrieve input</button>
-  <button id="edit" onclick="editForm1()">Edit input</button>
-  <button id="delete" onclick="deleteForm1()">Delete input</button>
+  <button onclick="retrieveForm1()">Retrieve input</button>
+  <button onclick="editForm1()">Edit input</button>
+  <button onclick="deleteForm1()">Delete input</button>
   <br>
   <br>
   <!-- JS files -->
