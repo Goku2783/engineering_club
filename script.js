@@ -48,9 +48,9 @@ function submit1() {
 //this method saves form1 to the database
 function saveForm1() {
   console.log("saveForm1() called");
-  var formData = submit1();
-  db.collection("2nd/3rd_Grade").doc(formData.name).set(formData);
-  alert(formData.name + "save to database!");}
+  var form1Data = submit1();
+  db.collection("2nd/3rd_Grade").doc(form1Data.name).set(form1Data);
+  alert(form1Data.name + "save to database!");}
 
 //form2 submitted items
 function submit2() {
@@ -77,6 +77,6 @@ function submit2() {
 //this method saves form2 to the database
 function saveForm2() {
   console.log("saveForm2() called");
-  var formData = submit2();
-  db.collection("4th/5th_Grade").doc(formData.name).set(formData);
-  alert(formData.name + "save to database!");}
+  var form2Data = submit2();
+  db.collection("4th/5th_Grade").doc(form2Data.name).set(form2Data);
+  alert(form2Data.name + "save to database!");}
