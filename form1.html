@@ -31,24 +31,31 @@
   <fieldset>
     <legend>2nd/3rd Grade Projects</legend>
     <br>
-    Name: <input type="text" name="name1" id="name1" placeholder="Enter your name" required>--> Enter your first and last name initial: (JesusR)<br><br>
-    Parachute Egg Challenge: <input type="text" name="parachute1" id="parachute1" placeholder="Write Yes or No" required><br><br>
-   Dam: <input type="text" name="Dam" id="Dam" placeholder="Write Yes or No" required><br><br>
-    Spider Web: <input type="text" name="spider_web" id="spider_web" placeholder="Write Yes or No" required><br><br>
-    Erosion Barrier: <input type="text" name="Errosion Barrier" id="errosion_barrier" placeholder="Write Yes or No" required><br><br>
-    Comments:<br>
-    <textarea name="comments1" id="comments1" placeholder="Enter any suggested projects here."></textarea>
-    <br>
-    <button type="submit1" onclick="submit1()">Submit</button>
-    <input class="reset" type="reset" name="reset" value="Reset">
-    <button id="save" onclick="saveForm1()">Save</button>
-    <button id="retrieve" onclick="retrieveForm1()">Retrieve input</button>
-    <button id="edit" onclick="editForm1()">Edit input</button>
-    <button id="delete" onclick="deleteForm1()">Delete input</button>
+    <label for="Name">Name: </label> 
+    <input type="text" name="name1" id="name1"><br><br>
+    <label for="parachute1">Parachute Egg Challenge: </label>
+    <input type="text" name="parachute1" id="parachute1"><br><br>
+    <label for="Dam">Dam:</label>
+    <input type="text" name="Dam" id="Dam"><br><br>
+    <label for="Spider Web">Spider Web: </label>
+    <input type="text" name="spider_web" id="spider_web"><br><br>
+    <lable for="Errosion Barrier">Erosion Barrier: </lable>
+    <input type="text" name="Errosion Barrier" id="errosion_barrier"><br><br>
+    <label for="formName">Name your form: </label>
+    <input type="text" name="formName" id="formName"> <--use this format: (formByJuanG)<br><br>
+    <label for="Comments">Comments: </label><br>
+    <textarea name="comments1" id="comments1"></textarea><br>
   </fieldset>
   </form>
-    <br>
-    <br>
+  
+  <button onclick="Submit1()">Submit</button>
+  <input class="reset" type="reset" name="reset" value="Reset">
+  <button id="save" onclick="saveForm1()">Save</button>
+  <button id="retrieve" onclick="retrieveForm1()">Retrieve input</button>
+  <button id="edit" onclick="editForm1()">Edit input</button>
+  <button id="delete" onclick="deleteForm1()">Delete input</button>
+  <br>
+  <br>
   <!-- JS files -->
   <script src="script.js"></script>
 </body>
