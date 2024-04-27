@@ -101,12 +101,11 @@ ul {
   color: white;
   text-align: center;
   margin-left: 90px;
-  padding: 5px 65px 5px;
+  padding: 10px 65px 10px;
   text-decoration: none; 
-  background-color: purple;
-  border-radius: 20px;}
+  background-color: purple;}
 
-li a:hover {background-color: #f59f0a;}
+li a:hover {background-color: black;}
 
 .active {
   float: left;
@@ -114,8 +113,7 @@ li a:hover {background-color: #f59f0a;}
   color: white;
   text-align: center;
   margin-left: 90px;
-  padding: 5px 65px 5px;
+  padding: 10px 65px 10px;
   text-decoration: none; 
-  background-color: #03a56a;
-  border-radius: 20px;}
+  background-color: #037c50;}
 
