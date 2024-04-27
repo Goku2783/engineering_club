@@ -35,7 +35,7 @@ function submit1() {
   var form1Data = {
     timestamp: Date.now(),
     name1: name1,
-    parachute: parachute1,
+    parachute1: parachute1,
     Dam: Dam,
     spider_web: spider_web,
     errosion_barrier: errosion_barrier,
@@ -53,7 +53,7 @@ function saveForm1() {
   alert(form1Data.name1 + "save to database!");}
 
 //form2 submitted items
-function submit2(){
+function submit2() {
   var name2 = document.getElementById("name2").value;
   var parachute2 = document.getElementById("parachute2").value;
   var magnetic_swin = document.getElementById("magnetic_swin").value;
