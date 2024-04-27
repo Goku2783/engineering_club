@@ -67,7 +67,7 @@ function Submit2() {
                   name: name,
                   parachute: parachute2,
                   magnetic_swing: magnetic_swing,
-                  water_filter: water_filter, 
+                  water_filter: water_filter,
                   rocket: rocket,
                   formName: formName,
                   comments: comments,}
