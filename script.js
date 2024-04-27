@@ -39,7 +39,7 @@ function submit1() {
     Dam: Dam,
     spider_web: spider_web,
     errosion_barrier: errosion_barrier,
-    comments: comments1,};
+    comments1: comments1,};
   var form1JSON = JSON.stringify(form1Data);
   console.log("formJSON: " + form1JSON);
   return form1Data;
@@ -68,7 +68,7 @@ function submit2(){
     magnetic_swin: magnetic_swin,
     water_filter: water_filter,
     stomp_rocket: stomp_rocket,
-    comments: comments2,};
+    comments2: comments2,};
   var form2JSON = JSON.stringify(form2Data);
   console.log("formJSON: " + form2JSON);
   return form2Data;
