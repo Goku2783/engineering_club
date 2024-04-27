@@ -70,12 +70,12 @@ function submit2(){
 function saveForm1() {
   console.log("saveForm1() called");
   var formData = submit1();
-  db.collection("2nd/3rd Grade").doc(formData.name1).set(formData);
-  alert(formData.name1 + "save to database!");}
+  db.collection("2nd/3rd Grade").doc(formData.name).set(formData);
+  alert(formData.name + "save to database!");}
 
 //this method saves form2 to the database
 function saveForm2() {
   console.log("saveForm2() called");
   var formData = submit2();
-  db.collection("4th/5th Grade").doc(formData.name2).set(formData);
-  alert(formData.name2 + "save to database!");}
+  db.collection("4th/5th Grade").doc(formData.name).set(formData);
+  alert(formData.name + "save to database!");}
