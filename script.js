@@ -34,7 +34,7 @@ function submit1() {
   
   var form1Data = {
     timestamp: Date.now(),
-    name: name1,
+    name1: name1,
     parachute: parachute1,
     Dam: Dam,
     spider_web: spider_web,
@@ -44,6 +44,14 @@ function submit1() {
   console.log("formJSON: " + form1JSON);
   return form1Data;
 }
+
+//this method saves form1 to the database
+function saveForm1() {
+  console.log("saveForm1() called");
+  var form1Data = submit1();
+  db.collection("2nd/3rd Grade").doc(form1Data.name1).set(form1Data);
+  alert(form1Data.name1 + "save to database!");}
+
 //form2 submitted items
 function submit2(){
   var name2 = document.getElementById("name2").value;
@@ -55,7 +63,7 @@ function submit2(){
   
   var form2Data = {
     timestamp: Date.now(),
-    name: name2,
+    name2: name2,
     parachute: parachute2,
     magnetic_swin: magnetic_swin,
     water_filter: water_filter,
@@ -66,16 +74,9 @@ function submit2(){
   return form2Data;
 }
 
-//this method saves form1 to the database
-function saveForm1() {
-  console.log("saveForm1() called");
-  var formData = submit1();
-  db.collection("2nd/3rd Grade").doc(formData.name).set(formData);
-  alert(formData.name + "save to database!");}
-
 //this method saves form2 to the database
 function saveForm2() {
   console.log("saveForm2() called");
-  var formData = submit2();
-  db.collection("4th/5th Grade").doc(formData.name).set(formData);
-  alert(formData.name + "save to database!");}
+  var form2Data = submit2();
+  db.collection("4th/5th Grade").doc(form2Data.name2).set(form2Data);
+  alert(form2Data.name2 + "save to database!");}
