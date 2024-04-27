@@ -71,7 +71,7 @@ function Submit2() {
                   rocket: rocket,
                   formName: formName,
                   comments: comments,}
-  
+  //prints data to the console
   var formJSON = JSON.stringify(formData);
   console.log("formJSON: " + formJSON);
   return formData;
