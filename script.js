@@ -49,7 +49,7 @@ function submit1() {
 function saveForm1() {
   console.log("saveForm1() called");
   var formData = submit1();
-  db.collection("2nd/3rd Grade").doc(formData.name).set(formData);
+  db.collection("2nd/3rd_Grade").doc(formData.name).set(formData);
   alert(formData.name + "save to database!");}
 
 //form2 submitted items
@@ -63,12 +63,12 @@ function submit2() {
   
   var formData = {
     timestamp: Date.now(),
-    name2: name,
+    name: name,
     parachute: parachute,
     magnetic_swin: magnetic_swin,
     water_filter: water_filter,
     stomp_rocket: stomp_rocket,
-    comments2: comments,};
+    comments: comments,};
   var formJSON = JSON.stringify(formData);
   console.log("formJSON: " + formJSON);
   return formData;
@@ -78,5 +78,5 @@ function submit2() {
 function saveForm2() {
   console.log("saveForm2() called");
   var formData = submit2();
-  db.collection("4th/5th Grade").doc(formData.name2).set(formData);
-  alert(formData.name2 + "save to database!");}
+  db.collection("4th/5th_Grade").doc(formData.name).set(formData);
+  alert(formData.name + "save to database!");}
