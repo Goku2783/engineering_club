@@ -52,7 +52,7 @@ function saveForm1() {
   console.log("saveForm1() called");
   var formData = Submit1();
   db.collection("2nd/3rdGrade").doc(formData.formName).set(formData);
-  alert(formData.formName+ " save to database!");
+  alert(formData.formName + " save to database!");
   }
 
 //form2 submitted items
@@ -84,5 +84,5 @@ function saveForm2() {
   console.log("saveForm2() called");
   var formData = Submit2();
   db.collection("4th/5thGrade").doc(formData.formName).set(formData);
-  alert(formData.formName+ " save to database!");
+  alert(formData.formName + " save to database!");
 }
