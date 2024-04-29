@@ -39,7 +39,8 @@ function Submit1() {
                   Dam: Dam,
                   spider_web: spider_web,
                   errosion_barrier: errosion_barrier,
-                  formName: formName,}
+                  formName: formName, 
+                  comments: comments,}
   //prints data to the console
   var formJSON = JSON.stringify(formData);
   console.log("formJSON: " + formJSON);
