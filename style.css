@@ -65,55 +65,68 @@ textarea {height: 5em;
           padding-top: 8px; font-size: 20px;}
 input {font-size: 20px;}
 
-fieldset {background-color: lightblue; margin-right: 35cap;}
+fieldset {background-color: #f7e682; margin-right: 35cap;}
 #form1 {padding: 20px;}
 #form2 {padding: 20px;}
 
-button {font-size: 20px; 
+.button {font-size: 20px; 
         margin-left: 2cap; 
         padding: 5px; 
-        border-width: 10px; 
-        color: white;
-        background-color: purple;
-        border-color: gold;}
+        color: black;
+        border-radius: 15px;
+        background-color: gold;
+        box-shadow: 0 9px purple;}
 
-.reset {background-color: #f7a6a6; 
-        border-radius: 20px;}
+.button:active {border-radius: 15px;
+               box-shadow: 0 5px purple;
+               transform: translateY(4px);} 
+
+.reset {font-size: 20px; 
+        margin-left: 2cap; 
+        padding: 5px; 
+        color: black;
+        border-radius: 15px;
+        background-color: #fb7474;
+        box-shadow: 0 9px black;}
+
+.reset:active {border-radius: 15px;
+ box-shadow: 0 5px purple;
+ transform: translateY(4px);} 
+
 
 input:required {border: 4px solid green;}
 
 legend {font-size: 35px; 
-        color: black; 
+        color: purple; 
         font-weight: bold;}
 
 
 ul {
   list-style-type: none;
-  padding: 10px;
   overflow: hidden;
-  background-color: gold; 
-  border-bottom: 5px solid purple; 
-  border-top: 5px solid purple;}
+  background-color: purple; 
+  }
 
 .links {
   float: left;
   display: block;
   color: white;
   text-align: center;
-  margin-left: 90px;
+  margin-left: 75px;
   padding: 10px 65px 10px;
   text-decoration: none; 
   background-color: purple;}
 
-li a:hover {background-color: black;}
+li a:hover {background-color: orange;
+           color: black;}
 
 .active {
   float: left;
   display: block;
-  color: white;
+  color: purple;
   text-align: center;
   margin-left: 90px;
   padding: 10px 65px 10px;
   text-decoration: none; 
-  background-color: #037c50;}
+  background-color: gold;}
 
