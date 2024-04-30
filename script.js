@@ -96,6 +96,7 @@ function deleteForm1() {
       var formData = doc.data();
       document.getElementById("formName").innerHTML = formData.formName + " successfully deleted!";
       db.collection("2nd and 3rd Grade").doc(formName).delete();
+      alert(formName + " successfully deleted!");
     } else {
       console.log("No such document!");
       alert(formName + " not found!");
@@ -177,6 +178,7 @@ function deleteForm2() {
       var formData = doc.data();
       document.getElementById("formName").innerHTML = formData.formName + " successfully deleted!";
       db.collection("4th and 5th Grade").doc(formName).delete();
+      alert(formName + " successfully deleted!");
     } else {
       console.log("No such document!");
       alert(formName + " not found!");
