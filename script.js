@@ -1,12 +1,12 @@
 // setup firebase app and firestore database
 const firebaseConfig = {
-    apiKey: "AIzaSyDujA0Y34FUwFVtli0nvQdA6b7MrXelxKs",
-    authDomain: "engineering-club-website.firebaseapp.com",
-    projectId: "engineering-club-website",
-    storageBucket: "engineering-club-website.appspot.com",
-    messagingSenderId: "171639607441",
-    appId: "1:171639607441:web:558ca34d2eb0a417892f30"
-  };
+  apiKey: "AIzaSyDujA0Y34FUwFVtli0nvQdA6b7MrXelxKs",
+  authDomain: "engineering-club-website.firebaseapp.com",
+  projectId: "engineering-club-website",
+  storageBucket: "engineering-club-website.appspot.com",
+  messagingSenderId: "171639607441",
+  appId: "1:171639607441:web:558ca34d2eb0a417892f30"
+};
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 console.log("firebase setup complete!");
@@ -26,34 +26,33 @@ function toggleDiagram() {
 }
 //form1 submitted items
 function Submit1() {
-  var name = document.getElementById("name1").value;
-  var parachute = document.getElementById("parachute1").value;
+  var name1 = document.getElementById("name1").value;
+  var parachute1 = document.getElementById("parachute1").value;
   var Dam = document.getElementById("Dam").value;
   var spider_web = document.getElementById("spider_web").value;
   var errosion_barrier = document.getElementById("errosion_barrier").value;
-  var formName = document.getElementById("formName").value;
-  var comments = document.getElementById("comments1").value;
+  var formName = document.getElementById("formName").value; 
+  var comments1 = document.getElementById("comments1").value;
   
-  var formData = {timestamp: Date.now(), 
-                  name: name,
-                  parachute: parachute,
-                  Dam: Dam,
-                  spider_web: spider_web,
-                  errosion_barrier: errosion_barrier,
-                  formName: formName, 
-                  comments: comments,
-                 };
-  var formData = JSON.stringify(formData);
+  var formData = {
+    timestamp: Date.now(),
+    name: name1,
+    parachute: parachute1,
+    Dam: Dam,
+    spider_web: spider_web,
+    errosion_barrier: errosion_barrier,
+    formName: formName,
+    comments: comments1,
+  };
   console.log("formData: " + formData);
-  db.collection("2nd/3rd Grade").doc(formData.formName).set(formData);
-
+  return formData;
 }
 
 //this method saves form1 to the database
 function saveForm1() {
   console.log("saveForm1() called");
   var formData = Submit1();
-  db.collection("2nd/3rd Grade").doc(formData.formName).set(formData);
+  db.collection("2nd and 3rd Grade").doc(formData.formName).set(formData);
   alert(formData.formName + " save to database!");
   }
 
@@ -77,7 +76,6 @@ function Submit2() {
                   comments: comments,
                  };
   //prints data to the console
-  var formData = JSON.stringify(formData);
   console.log("formData: " + formData);
   return formData;
 }
@@ -86,6 +84,6 @@ function Submit2() {
 function saveForm2() {
   console.log("saveForm2() called");
   var formData = Submit2();
-  db.collection("4th/5thGrade").doc(formData.formName).set(formData);
+  db.collection("4th and 5th Grade").doc(formData.formName).set(formData);
   alert(formData.formName + " save to database!");
 }
