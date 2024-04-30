@@ -1,5 +1,5 @@
 // setup firebase app and firestore database
- const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyDujA0Y34FUwFVtli0nvQdA6b7MrXelxKs",
     authDomain: "engineering-club-website.firebaseapp.com",
     projectId: "engineering-club-website",
@@ -10,6 +10,7 @@
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 console.log("firebase setup complete!");
+
 
 //opens first semester meeting dates table on click of button.
 function toggleTable1() {
@@ -30,7 +31,7 @@ function Submit1() {
   var Dam = document.getElementById("Dam").value;
   var spider_web = document.getElementById("spider_web").value;
   var errosion_barrier = document.getElementById("errosion_barrier").value;
-  var formName = document.getElementById("formName").value
+  var formName = document.getElementById("formName").value;
   var comments = document.getElementById("comments1").value;
   
   var formData = {timestamp: Date.now(), 
@@ -40,18 +41,19 @@ function Submit1() {
                   spider_web: spider_web,
                   errosion_barrier: errosion_barrier,
                   formName: formName, 
-                  comments: comments,}
-  //prints data to the console
-  var formJSON = JSON.stringify(formData);
-  console.log("formJSON: " + formJSON);
-  return formData;
+                  comments: comments,
+                 };
+  var formData = JSON.stringify(formData);
+  console.log("formData: " + formData);
+  db.collection("2nd/3rd Grade").doc(formData.formName).set(formData);
+
 }
 
 //this method saves form1 to the database
 function saveForm1() {
   console.log("saveForm1() called");
   var formData = Submit1();
-  db.collection("2nd/3rdGrade").doc(formData.formName).set(formData);
+  db.collection("2nd/3rd Grade").doc(formData.formName).set(formData);
   alert(formData.formName + " save to database!");
   }
 
@@ -62,7 +64,7 @@ function Submit2() {
   var magnetic_swing = document.getElementById("magnetic_swing").value;
   var water_filter = document.getElementById("water_filter").value;
   var rocket = document.getElementById("rocket").value;
-  var formName = document.getElementById("formName").value
+  var formName = document.getElementById("formName").value;
   var comments = document.getElementById("comments2").value;
   
   var formData = {timestamp: Date.now(),
@@ -72,10 +74,11 @@ function Submit2() {
                   water_filter: water_filter,
                   rocket: rocket,
                   formName: formName,
-                  comments: comments,}
+                  comments: comments,
+                 };
   //prints data to the console
-  var formJSON = JSON.stringify(formData);
-  console.log("formJSON: " + formJSON);
+  var formData = JSON.stringify(formData);
+  console.log("formData: " + formData);
   return formData;
 }
 
