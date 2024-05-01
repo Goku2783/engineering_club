@@ -1,12 +1,12 @@
 // setup firebase app and firestore database
 const firebaseConfig = {
-  apiKey: "AIzaSyDujA0Y34FUwFVtli0nvQdA6b7MrXelxKs",
-  authDomain: "engineering-club-website.firebaseapp.com",
-  projectId: "engineering-club-website",
-  storageBucket: "engineering-club-website.appspot.com",
-  messagingSenderId: "171639607441",
-  appId: "1:171639607441:web:558ca34d2eb0a417892f30"
-};
+    apiKey: "AIzaSyDujA0Y34FUwFVtli0nvQdA6b7MrXelxKs",
+    authDomain: "engineering-club-website.firebaseapp.com",
+    projectId: "engineering-club-website",
+    storageBucket: "engineering-club-website.appspot.com",
+    messagingSenderId: "171639607441",
+    appId: "1:171639607441:web:558ca34d2eb0a417892f30"
+  };
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 console.log("firebase setup complete!");
