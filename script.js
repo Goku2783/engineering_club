@@ -86,7 +86,7 @@ function editForm1() {
 //This method deletes the selected form from form1 in the database.
 function deleteForm1() {
   console.log("deleteForm1() called");
-  var formName = prompt("Enter the name of your form in order retrieve it:");
+  var formName = prompt("Enter the name of your form in order delete it:");
   db.collection("2nd and 3rd Grade")
   .doc(formName)
   .get()
@@ -168,7 +168,7 @@ function editForm2() {
 //This method deletes the selected form from form2 in the database.
 function deleteForm2() {
   console.log("deleteForm2() called");
-  var formName = prompt("Enter the name of your form in order retrieve it:");
+  var formName = prompt("Enter the name of your form in order delete it:");
   db.collection("4th and 5th Grade")
   .doc(formName)
   .get()
