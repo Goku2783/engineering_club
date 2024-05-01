@@ -55,7 +55,7 @@ function Submit1() {
 //This method lets you recall form1 to edit or make changes to it. 
 function editForm1() {
   console.log("editForm1() called");
-  var formName = prompt("Enter the name of your form in order retrieve it:");
+  var formName = prompt("Enter the name of your form in order to retrieve it:");
   db.collection("2nd and 3rd Grade")
   .doc(formName)
   .get()
@@ -86,7 +86,7 @@ function editForm1() {
 //This method deletes the selected form from form1 in the database.
 function deleteForm1() {
   console.log("deleteForm1() called");
-  var formName = prompt("Enter the name of your form in order delete it:");
+  var formName = prompt("Enter the name of your form in order to delete it:");
   db.collection("2nd and 3rd Grade")
   .doc(formName)
   .get()
@@ -137,7 +137,7 @@ function Submit2() {
 //This method lets you recall form2 to edit or make changes to it. 
 function editForm2() {
   console.log("editForm2() called");
-  var formName = prompt("Enter the name of your form in order retrieve it:");
+  var formName = prompt("Enter the name of your form in order to retrieve it:");
   db.collection("4th and 5th Grade")
   .doc(formName)
   .get()
@@ -168,7 +168,7 @@ function editForm2() {
 //This method deletes the selected form from form2 in the database.
 function deleteForm2() {
   console.log("deleteForm2() called");
-  var formName = prompt("Enter the name of your form in order delete it:");
+  var formName = prompt("Enter the name of your form in order to delete it:");
   db.collection("4th and 5th Grade")
   .doc(formName)
   .get()
