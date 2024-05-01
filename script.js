@@ -55,7 +55,7 @@ function Submit1() {
 //This method lets you recall form1 to edit or make changes to it. 
 function editForm1() {
   console.log("editForm1() called");
-  var formName = prompt("Enter the nameof your form in order retrieve it:");
+  var formName = prompt("Enter the name of your form in order retrieve it:");
   db.collection("2nd and 3rd Grade")
   .doc(formName)
   .get()
